@@ -1,19 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-/*
-  2. Remove default margin
-*/
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /*
@@ -75,10 +65,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-.container {
-  min-width: 100vh;
 }
 
 .header {
@@ -177,6 +163,168 @@ h1 {
   width: 343px;
 }
 
+.cards-image {
+  background-image: url(../images/redefining-product-features-bg-desktop-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.redefining-product-features-img-tablet {
+  display: none;
+}
+
+.redefining-product-features-img-desktop {
+  display: none;
+}
+
+
+.cards-image img {
+  margin-inline: auto;
+}
+
+.product-features-card {
+  padding-inline: 16px;
+  padding-block: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.product-features-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-features-card-text p {
+  display: none;
+}
+
+.product-features-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h5 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #272d37;
+  margin-top: 32px;
+}
+
+.redefining-product-features ul li {
+  display: flex;
+  gap: 8px;
+}
+
+.start-now-btn {
+  display: flex;
+  align-items: center;
+  width: 133px;
+  height: 46px;
+}
+
+.start-now-btn a {
+  background-color: #437ef7;
+  display: flex;
+  padding: 12px 18px;
+  border-radius: 6px;
+  color: white;
+  width: 100%;
+}
+
+.start-now-btn img {
+  vertical-align: middle;
+}
+
+.product-features-card ul li {
+  display: flex;
+  gap: 8px;
+}
+
+.questions {
+  margin-inline: 16px;
+  border: 1px solid #EAEBF0;
+  box-shadow: 0px 1px 2px 0px #1018280A;
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #EAEBF0;
+  padding: 15px 20px;
+}
+
+.frequently-asked-questions p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: center;
+  color: #5F6D7E;
+  padding-inline: 16px;
+  margin-top: 12px;
+  margin-bottom: 32px;
+  }
+
+.question p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+color: #272D37;
+}
+
+.question p span {
+  color: #5F6D7E;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+
+.question:nth-child(1) p {
+  display: flex;
+  flex-direction: column;
+font-size: 18px;
+font-weight: 500;
+line-height: 28px;
+text-align: left;
+
+}
+.pop-up a {
+  display: none;
+}
+
+.new-button {
+  align-content: center;
+}
+
+.new-button a{
+  color: #437EF7;
+  background-color: #F5FAFF;
+padding: 4px 12px 4px 12px;
+border-radius: 5px;
+}
+
+.frequently-asked-questions h5 {
+font-size: 32px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: -0.02em;
+text-align: center;
+color: #272D37;
+}
+
+
+
+
 @media (width >= 768px) {
   .header {
     padding: 20px;
@@ -199,6 +347,52 @@ h1 {
     line-height: 60px;
     letter-spacing: -0.01em;
   }
+
+  .cards-image {
+    background-image: url(../images/redefining-product-features-bg-tablet.png);
+  }
+
+  .redefining-product-features-img {
+    display: none;
+  }
+
+  .redefining-product-features-img-tablet {
+    display: block;
+  }
+
+  .redefining-product-features-img-desktop {
+    display: none;
+  }
+
+
+  .product-features-card {
+    padding-inline: 32px;
+    padding-block: 40px;
+    gap: 40px;
+  }
+
+  .product-features-card-text {
+    max-width: 704px;
+    margin-inline: auto;
+  }
+
+  .product-features-card-text p {
+    display: none;
+  }
+
+  h5 {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.01em;
+    margin-top: 48px;
+  }
+
+  .frequently-asked-questions {
+    margin-inline: auto;
+    margin-block: 40px;
+    padding-inline: 32px;
+  }
+
 }
 
 @media (width >= 1110px) {
@@ -274,5 +468,72 @@ h1 {
   .workflow-text {
     padding-inline: 0px;
     max-width: 640px;
+  }
+
+  .product-features-card {
+    padding-inline: 80px;
+    padding-block: 64px;
+    gap: 124px;
+    width: 100%;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1280px;
+    gap: 124px;
+    margin-inline: auto;
+  }
+
+  .product-features-card-text {
+    align-self: center;
+    gap: 0px;
+    width: 532px;
+  }
+
+  .product-features-card-text p {
+    display: block;
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  .product-features-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  h5 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #272d37;
+    margin-top: 0px;
+  }
+
+  .product-features-card ul li {
+    display: flex;
+    gap: 8px;
+  }
+
+  .pop-up a {
+    display: flex;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: -0.10000000149011612px;
+text-align: left;
+color: #5F6D7E;
+gap: 32px;
+  }
+
+  .frequently-asked-questions {
+    max-width: 1280px;
+    margin-inline: auto;
+    margin-block: 64px;
   }
 }
