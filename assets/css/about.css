@@ -385,7 +385,12 @@ h5 {
 
 .team-members h2 {
   padding-top: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
   text-align: center;
+  color: #272d37;
   margin-bottom: 12px;
 }
 
@@ -397,13 +402,16 @@ h5 {
 }
 
 .team-members-list {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .profil-card {
-  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  max-width: 311px;
+  margin-inline: auto;
 }
 
 .profil-card .identity {
@@ -452,34 +460,35 @@ h5 {
   margin-bottom: 16px;
 }
 
+.register-area {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
 .register-area a {
   display: flex;
   flex-direction: column;
   text-align: center;
   max-width: 343px;
+  width: 100%;
   margin-inline: auto;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
 }
 
 .sponsors-section .sign-up {
-  padding: 12px 18px;
-  border-radius: 6px;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 22px;
   background-color: #ffffff;
   color: #437ef7;
-  margin-bottom: 16px;
 }
 
 .sponsors-section .log-in {
-  padding: 12px 18px;
-  border-radius: 6px;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 22px;
   background-color: #437ef7;
   color: #ffffff;
-  margin-bottom: 32px;
 }
 
 .sponsors-section .sponsors-list {
@@ -593,6 +602,26 @@ h5 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+    max-width: 704px;
+    margin-inline: auto;
+  }
+
+  .team-members h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .team-members .intro {
+    max-width: 704px;
+    margin-inline: auto;
+  }
+
+  .profil-card {
+    max-width: 336px;
   }
 
   .sponsors-section h3 {
@@ -603,15 +632,14 @@ h5 {
     letter-spacing: -0.01em;
   }
 
-  .sponsors-section .register-area {
-    display: flex;
-    gap: 16px;
-    align-items: center;
+  .register-area {
+    flex-direction: row;
     justify-content: center;
   }
 
   .register-area a {
-    margin-inline: auto;
+    width: 91px;
+    margin-inline: 0px;
   }
 
   .sponsors-list {
@@ -774,7 +802,16 @@ h5 {
     margin-block: 64px;
   }
 
+  .faq-intro {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+
   /*omer-start*/
+
+  .desktop-none {
+    display: none;
+  }
 
   .messaging-for-all {
     padding-inline: 80px;
@@ -804,10 +841,16 @@ h5 {
   .team-members-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 1280px;
+    margin-bottom: 112px;
   }
 
-  .team-members {
-    padding-inline: 240px;
+  .team-members .intro {
+    max-width: 800px;
+  }
+
+  .profil-card {
+    max-width: 384px;
   }
 
   .sponsors-list img:nth-child(5) {
