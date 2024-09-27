@@ -1,19 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-/*
-  2. Remove default margin
-*/
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /*
@@ -272,13 +262,75 @@ h1 {
   padding-inline: 16px;
 }
 
+.customers-say-bg h5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #272d37;
+  margin-bottom: 40px;
+}
+
 .customers-say {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.customers-say-bg h5 {
+.advantages-section {
+  margin-inline: auto;
+}
+
+.lookscout-advantages-cards {
+  padding-top: 32px;
+  margin-inline: 18px;
+}
+
+.card {
+  margin-bottom: 40px;
+  margin-inline: auto;
+  max-width: 339px;
+}
+
+.card .top-icon {
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #272d37;
+  margin-bottom: 8px;
+}
+
+.card p {
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  margin-bottom: 16px;
+  color: #5f6d7e;
+}
+
+.card .card-bottom {
+  display: flex;
+  gap: 6px;
+}
+
+.card .card-bottom a {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #437ef7;
+}
+
+.redefining-product-features {
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+
+.redefining-product-features h2 {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -294,6 +346,38 @@ h1 {
   line-height: 24px;
   letter-spacing: -0.10000000149011612px;
   text-align: left;
+  margin-bottom: 12px;
+}
+
+.redefining-product-features .intro {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5f6d7e;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.industry-card {
+  padding-inline: 16px;
+  margin-bottom: 32px;
+}
+
+.industry-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  color: #437ef7;
+  margin-bottom: 8px;
+}
+
+.industry-card h1 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.02em;
   color: #272d37;
   margin-bottom: 16px;
 }
@@ -371,7 +455,7 @@ h1 {
 
   .customers-say-bg {
     padding-block: 40px;
-  padding-inline: 32px;
+    padding-inline: 32px;
   }
 
   .customers-say {
@@ -382,6 +466,35 @@ h1 {
 
   .customer-card:nth-child(3) {
     grid-column: 1 / -1;
+  }
+
+  .advantages-section {
+    padding-inline: 32px;
+  }
+
+  .lookscout-advantages-cards {
+    padding-inline: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 32px;
+  }
+
+  .industry-card .intro {
+    text-align: left;
+  }
+
+  .hero-profiles img {
+    margin-inline: auto;
+  }
+
+  .customers-say-bg h5 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #272d37;
+    margin-bottom: 64px;
   }
 }
 
@@ -466,7 +579,7 @@ h1 {
 
   .customers-say-bg {
     padding-block: 64px;
-  padding-inline: 32px;
+    padding-inline: 32px;
   }
 
   .customers-say {
@@ -478,11 +591,70 @@ h1 {
   }
 
   .customer-card:nth-child(3) {
-    grid-column: auto; 
+    grid-column: auto;
   }
 
   .subscription-type {
     margin-bottom: 64px;
     margin-top: 0px;
+  }
+  .industry-card .intro {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .industry-card a {
+    display: flex;
+    gap: 6px;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    background-color: #437ef7;
+    color: #ffffff;
+    max-width: 133px;
+  }
+
+  .hero-profiles img {
+    margin-inline: auto;
+    padding-inline: 16px;
+  }
+
+  .card .card-bottom a,
+  .card .card-bottom img {
+    display: none;
+  }
+
+  .first-item {
+    border: 3px solid #fff;
+  }
+
+  .redefining-product-features {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+
+  .industry-transaction-area {
+    margin-block: 64px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: auto;
+    padding-inline: 32px;
+    max-width: 1280px;
+  }
+
+  .industry-card {
+    max-width: 516px;
+    padding-block: auto;
+    justify-self: center;
+  }
+
+  .hero-profiles img {
+    max-width: 560px;
   }
 }
