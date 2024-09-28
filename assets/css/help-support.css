@@ -67,6 +67,85 @@ ul {
   list-style: none;
 }
 
+/* buse start */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.header ul {
+  display: none;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  background-image: url("../images/base-background.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  border-bottom-left-radius: 100% 10%;
+  border-bottom-right-radius: 100% 10%;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f1724d9;
+  background-blend-mode: multiply;
+  z-index: 1;
+  border-bottom-left-radius: 100% 10%;
+  border-bottom-right-radius: 100% 10%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  justify-content: center;
+}
+
+.workflow-section {
+  margin-top: 116px;
+}
+
+.workflow-section img {
+  margin-inline: auto;
+  margin-block: 32px;
+}
+
+.workflow-text {
+  padding-inline: 16px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #f9f9f9;
+}
+
+.workflow-text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: center;
+  color: #f9f9f9;
+  margin-top: 16px;
+}
+
+/* buse end */
+
 /*omer - start*/
 .easier-integration {
   padding-inline: 16px;
