@@ -162,7 +162,7 @@ h1 {
 
 .main-img {
   position: relative;
-  width:100%;
+  width: 100%;
   height: 546px;
   background-image: url(../images/careers-main-image.png);
   background-size: cover;
@@ -175,9 +175,196 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
+.team-menu-bg {
+  background-color: #f8f9fb;
+}
+.team-menu {
+  padding: 32px;
+}
+
+.team-menu h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: center;
+  color: #437ef7;
+  margin-inline: auto;
+  margin-bottom: 8px;
+}
+
+.team-menu h5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #272d37;
+  margin-bottom: 12px;
+}
+
+.team-menu p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: center;
+  color: #5f6d7e;
+}
+
+.dropdown-menu-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  align-self: center;
+  min-width: 311px;
+}
+
+.dropdown h6 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #272d37;
+  margin-bottom: 8px;
+}
+
+.dropdown-btn {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #272d37;
+  display: flex;
+  border: 1px solid #dae0e6;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 0px #1018280a;
+  justify-content: space-between;
+  padding-block: 12px;
+  padding-inline: 16px;
+  background-color: white;
+  max-width: 311px;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content li {
+  padding: 12px 16px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dropdown-content li:hover {
+  background-color: #ddd;
+}
+
+.dropdown-btn:active + .dropdown-content {
+  display: block;
+}
+
+.dropdown-btn:focus + .dropdown-content {
+  display: block;
+}
+
+.roles-table-box {
+  padding-inline: 16px;
+  padding-block: 40px;
+}
+
+.table-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-title h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #272d37;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-title h4 span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #5f6d7e;
+}
+
+.table-title h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #437ef7;
+  align-self: center;
+}
+
+.styled-table {
+  background-color: white;
+  border: 1px solid #eaebf0;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 0px #1018280a;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.styled-table tr th,
+.styled-table tr td {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #272d37;
+}
+
+.styled-table tr td span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #5f6d7e;
+}
+
+.styled-table td,
+.styled-table th {
+  border-bottom: 1px solid #eaebf0;
+  padding: 16px;
+}
+
+.hide-on-mobile {
+  display: none;
+}
+
 @media (width >= 768px) {
   .header {
     padding: 20px;
@@ -203,6 +390,27 @@ h1 {
     letter-spacing: -0.01em;
   }
 
+  .team-menu h5 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .dropdown-menu-box {
+    flex-direction: row;
+  }
+
+  .dropdown {
+    min-width: 213px;
+    margin-inline: auto;
+  }
+
+  .hide-on-mobile {
+    display: revert-layer;
+  }
+
+  .roles-table-box {
+    padding-inline: 32px;
+  }
 }
 
 @media (width >= 1110px) {
@@ -268,5 +476,27 @@ h1 {
   .workflow-text {
     padding-inline: 0px;
     max-width: 640px;
+  }
+
+  .dropdown-menu-box {
+    padding-inline: 32px;
+    max-width: 1280px;
+    margin-inline: auto;
+  }
+
+  .dropdown {
+    min-width: 384px;
+    margin-inline: auto;
+  }
+
+  .dropdown-btn {
+    max-width: 384px;
+  }
+
+  .roles-table-box {
+    padding-inline: 0px;
+    padding-block: 80px;
+    max-width: 1280px;
+    margin-inline: auto;
   }
 }
