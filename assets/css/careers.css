@@ -67,6 +67,18 @@ ul {
   list-style: none;
 }
 
+.mobile-only {
+  display: block;
+}
+
+.tablet-only {
+  display: none;
+}
+
+.desktop-only {
+  display: none;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -160,6 +172,76 @@ h1 {
   margin-inline: auto;
 }
 
+/*omer - start*/
+.industry-section {
+  padding-block: 32px;
+}
+
+.industry-card {
+  padding-inline: 16px;
+  margin-block: 32px;
+}
+
+.industry-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  color: #437ef7;
+  margin-bottom: 8px;
+}
+
+.industry-card h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #272d37;
+  margin-bottom: 16px;
+}
+
+.industry-card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #5f6d7e;
+  margin-bottom: 32px;
+}
+
+.industry-card-bottom a {
+  display: flex;
+  gap: 6px;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  background-color: #437ef7;
+  color: #ffffff;
+  max-width: 133px;
+}
+
+.transaction-desktop-only img {
+  display: none;
+}
+
+.transaction-image {
+  margin-inline: auto;
+  padding-inline: 16px;
+  max-width: 600px;
+}
+
+.branding-publicity {
+  margin-inline: auto;
+  padding-inline: 16px;
+  max-width: 600px;
+}
+
+/*omer - end*/
+
 .main-img {
   position: relative;
   width: 100%;
@@ -197,6 +279,34 @@ h1 {
 }
 
 .team-menu h5 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #272d37;
+}
+
+.team-menu-text-intro {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: center;
+  color: #5f6d7e;
+}
+
+/*omer start*/
+.comments-section {
+  padding-block: 32px;
+  padding-inline: 16px;
+}
+
+.customer-opinion {
+  margin-bottom: 40px;
+}
+
+.customer-opinion h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -207,6 +317,12 @@ h1 {
 }
 
 .team-menu p {
+  color: #5f6d7e;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.customer-opinion p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -318,6 +434,39 @@ h1 {
   color: #5f6d7e;
 }
 
+.ceo-profile img {
+  margin-bottom: 32px;
+  margin-inline: auto;
+}
+
+.comments-section .quotation-mark {
+  margin-bottom: 16px;
+}
+
+.comment-bottom-section {
+  margin-inline: auto;
+  max-width: 350px;
+}
+
+.ceo-comment h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #272d37;
+  margin-bottom: 16px;
+}
+
+.ceo-comment .title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #5f6d7e;
+}
+
 .table-title h3 {
   font-size: 14px;
   font-weight: 500;
@@ -365,7 +514,54 @@ h1 {
   display: none;
 }
 
+.comments-section hr {
+  border: 1px solid #eaebf0;
+}
+
+.news-area {
+  margin-bottom: 16px;
+  padding-top: 16px;
+}
+
+.news-area .number {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #272d37;
+  margin-bottom: 16px;
+}
+
+.news-area .headline {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5f6d7e;
+  margin-bottom: 16px;
+}
+
+.news-area .news-link {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #437ef7;
+}
+/*omer end*/
+
 @media (width >= 768px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .tablet-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
   .header {
     padding: 20px;
   }
@@ -411,9 +607,83 @@ h1 {
   .roles-table-box {
     padding-inline: 32px;
   }
+  /* omer-start   */
+
+  .industry-card {
+    margin-bottom: 48px;
+    max-width: 704px;
+    margin-inline: auto;
+  }
+
+  .industry-card h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+
+  .industry-card p {
+    margin-bottom: 40px;
+  }
+
+  .transaction-desktop-only img {
+    display: none;
+  }
+
+  .transaction-image {
+    max-width: 704px;
+  }
+
+  .branding-publicity {
+    max-width: 704px;
+  }
+
+  .comments-section {
+    display: grid;
+    padding-inline: 32px;
+  }
+
+  .comment-bottom-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 704px;
+    padding-inline: 32px;
+    margin-inline: auto;
+  }
+
+  .comment-bottom-section .ceo-comment,
+  .comment-bottom-section .news-area {
+    max-width: 304px;
+    align-self: center;
+  }
+
+  .comment-bottom-section .ceo-comment {
+    margin-right: 32px;
+  }
+
+  .news-area {
+    padding-top: 64px;
+    border-left: 1px solid #eaebf0;
+    padding-left: 32px;
+  }
+
+  /* omer-end   */
 }
 
 @media (width >= 1110px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .tablet-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
   .header {
     width: 100%;
     max-width: 1280px;
@@ -499,4 +769,74 @@ h1 {
     max-width: 1280px;
     margin-inline: auto;
   }
+  /* omer-start  */
+
+  .industry-section {
+    padding-inline: 80px;
+  }
+
+  .industry-first-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: auto;
+    margin-bottom: 64px;
+  }
+
+  .industry-first-section .industry-card {
+    max-width: 516px;
+    align-self: center;
+  }
+
+  .transaction-image img {
+    display: none;
+  }
+
+  .transaction-desktop-only img {
+    display: block;
+  }
+
+  .industry-second-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: auto;
+    margin-bottom: 64px;
+  }
+
+  .industry-second-section .industry-card {
+    max-width: 516px;
+    align-self: center;
+    order: 1;
+  }
+
+  .branding-publicity img {
+    max-width: 560px;
+  }
+
+  .customer-opinion {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+
+  .comment-desktop-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: auto;
+    padding-inline: 112px;
+  }
+
+  .comment-bottom-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .comment-bottom-section div {
+    max-width: 352px;
+    align-self: center;
+  }
+
+  .news-area {
+    padding-top: 32px;
+  }
+
+  /* omer-end  */
 }
