@@ -79,6 +79,14 @@ ul {
   display: none;
 }
 
+.header ul li a{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: white;
+}
+
 .hero {
   position: relative;
   width: 100%;

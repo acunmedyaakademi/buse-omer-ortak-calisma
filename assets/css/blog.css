@@ -77,6 +77,14 @@ ul {
   display: none;
 }
 
+.header ul li a{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: white;
+}
+
 .hero {
   position: relative;
   width: 100%;
@@ -329,6 +337,43 @@ align-self: center;
 }
 
 @media (width >= 768px) {
+
+  .mobile-only {
+    display: none;
+  }
+
+  .tablet-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .header {
+    padding: 20px;
+  }
+
+  .workflow-section {
+    max-width: 672px;
+    margin-top: 48px;
+    margin-inline: auto;
+    margin-bottom: 48px;
+  }
+
+  .workflow-text {
+    padding-inline: 48px;
+    max-width: 672px;
+    margin-inline: auto;
+  }
+
+  h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.01em;
+  }
+
   .tags-search {
     display: flex;
     flex-direction: row;
@@ -365,6 +410,82 @@ align-self: center;
 }
 
 @media (width >= 1110px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .tablet-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .header {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 20px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+  }
+
+  .links ul {
+    display: flex;
+    gap: 32px;
+  }
+
+  .links ul li {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color: white;
+  }
+
+  .header ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .login-buttons {
+    gap: 24px;
+  }
+
+  .login-buttons a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .login-buttons li:nth-child(1) a {
+    color: #437ef7;
+  }
+
+  .login-buttons li:nth-child(2) a {
+    background-color: #437ef7;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .workflow-text {
+    padding-inline: 0px;
+    max-width: 640px;
+  }
+  
   .blog-page {
     max-width: 1280px;
     margin-inline: auto;
