@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter";
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.contact-section {
+  margin-inline: 16px;
+}
+
+.intro {
+  padding-block: 32px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.intro-card {
+  margin-bottom: 32px;
+  margin-inline: auto;
+}
+
+.intro-card h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: #272d37;
+  margin-bottom: 8px;
+}
+
+.intro-card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5f6d7e;
+}
+
+.form-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.form {
+  margin-inline: auto;
+  max-width: 600px;
+}
+
+.text-label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  color: #272d37;
+  margin-bottom: 8px;
+}
+
+.text {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid #dae0e6;
+  background-color: #fff;
+  margin-bottom: 16px;
+}
+
+::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.10000000149011612px;
+  color: #919ba7;
+  padding-left: 16px;
+}
+
+.text-area {
+  width: 100%;
+  height: 145px;
+  padding: 12px 16px;
+  gap: 10px;
+  border-radius: 6px;
+  border: 1px solid #dae0e6;
+}
+
+.checkbox-label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  margin-left: 12px;
+  margin-bottom: 16px;
+}
+
+.submit {
+  margin-top: 16px;
+  padding: 12px 18px;
+  gap: 6px;
+  border-radius: 6px;
+  background-color: #437ef7;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 20px;
+  display: block;
+  margin-bottom: 40px;
+  max-width: 400px;
+}
+
+.checkbox-area {
+  margin-inline: auto;
+  padding-inline: 16px;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+@media (width >= 768px) {
+  .contact-section {
+    padding-inline: 32px;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 24px;
+  }
+
+  .form .input-group {
+    width: 308px;
+  }
+
+  .checkbox-area {
+    border-left: 100px solid #fff;
+    max-width: 450px;
+    /* margin-right: auto; */
+  }
+
+  .checkbox-area .submit {
+    width: 88px;
+  }
+}
+
+@media (width >= 1110px) {
+  .contact-section {
+    margin-inline: auto;
+    padding-inline: 80px;
+  }
+
+  .intro {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form {
+    padding-inline: 32px;
+  }
+
+  .form .input-group {
+    max-width: 900px;
+  }
+}
