@@ -335,6 +335,10 @@ h5 {
   padding-inline: 32px;
 }
 
+.messaging-for-all .introduction.desktop-only {
+  display: none;
+}
+
 .messaging-for-all h2 {
   padding-top: 32px;
   font-family: Inter;
@@ -636,6 +640,10 @@ h5 {
     text-align: center;
   }
 
+  .messaging-for-all .introduction.desktop-only {
+    display: none;
+  }
+
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -906,6 +914,20 @@ h5 {
   .messaging-for-all {
     padding-inline: 80px;
     margin-inline: auto;
+  }
+
+  /*5-ekim-2024 revize-omer*/
+  .messaging-for-all .introduction.desktop-only {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: center;
+    color : #5F6D7E;
+    margin-top: 16px;
+    margin-inline:auto;
+
   }
 
   .messaging-for-all h2 {
