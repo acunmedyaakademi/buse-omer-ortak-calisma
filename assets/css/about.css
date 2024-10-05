@@ -410,6 +410,8 @@ h5 {
   letter-spacing: -0.10000000149011612px;
   text-align: center;
   margin-bottom: 32px;
+  padding-inline : 32px;
+
 }
 
 .team-members-list {
@@ -475,7 +477,7 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 .register-area a {
@@ -506,6 +508,7 @@ h5 {
   display: grid;
   gap: 32px;
   justify-content: center;
+  margin-top: 32px;
 }
 
 .footer {
@@ -700,9 +703,12 @@ h5 {
     letter-spacing: -0.01em;
   }
 
+  /*5-ekim-2024-revize*/
   .register-area {
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 80px;
+
   }
 
   .register-area a {
@@ -713,6 +719,7 @@ h5 {
   .sponsors-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 40px;
   }
 
   .sponsors-list img {
@@ -965,6 +972,12 @@ h5 {
     max-width: 384px;
   }
 
+  .register-area {
+    margin-bottom: 128px;
+  }
+
+
+
   .sponsors-list img:nth-child(5) {
     grid-column: auto;
   }
@@ -976,7 +989,7 @@ h5 {
   .sponsors-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin-block: 64px;
+    margin-bottom: 64px;
     max-width: 1280px;
     margin-inline: auto;
   }
