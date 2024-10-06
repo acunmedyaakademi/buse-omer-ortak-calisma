@@ -869,6 +869,7 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     margin-inline: auto;
     margin-bottom: 64px;
+    gap: 140px;
   }
 
   .industry-first-section .industry-card {
@@ -888,7 +889,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-inline: auto;
-    margin-bottom: 64px;
+    padding-top: 64px;
+    gap: 90px;
+
   }
 
   .industry-second-section .industry-card {
@@ -907,24 +910,28 @@ h1 {
   }
 
   .comment-desktop-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
     margin-inline: auto;
-    padding-inline: 112px;
+
   }
 
   .comment-bottom-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .comment-bottom-section div {
-    max-width: 352px;
-    align-self: center;
+    background-color: #fff;
   }
 
   .news-area {
-    padding-top: 32px;
+    margin: 0;
+  }
+
+  .news-area .headline {
+    margin-bottom: 10px;
+  }
+
+  .news-area .number {
+    margin-bottom: 16px;
   }
 
   .footer-list {
