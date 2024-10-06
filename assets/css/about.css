@@ -265,10 +265,35 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 1px solid #eaebf0;
-  padding: 15px 20px;
+  padding: 28px 32px;
 }
 
-.frequently-asked-questions p {
+.question details summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-up {
+  width: 100%;
+}
+
+.question details summary div {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  text-align: right;
+}
+
+summary div {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #5f6d7e;
+}
+
+.faq-intro {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -280,7 +305,7 @@ h5 {
   margin-bottom: 32px;
 }
 
-.question p {
+.question h6 {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -289,7 +314,7 @@ h5 {
   color: #272d37;
 }
 
-.question p span {
+.question h6 span {
   color: #5f6d7e;
   font-size: 16px;
   font-weight: 400;
@@ -304,6 +329,13 @@ h5 {
   line-height: 28px;
   text-align: left;
 }
+
+details summary {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
 .pop-up a {
   display: none;
 }
@@ -312,11 +344,21 @@ h5 {
   align-content: center;
 }
 
+.question h6 {
+  align-content: center;
+}
+
 .new-button a {
   color: #437ef7;
   background-color: #f5faff;
   padding: 4px 12px 4px 12px;
   border-radius: 5px;
+}
+
+details p {
+  text-align: left;
+  margin-top: 20px;
+  color: #5f6d7e;
 }
 
 .frequently-asked-questions h5 {
