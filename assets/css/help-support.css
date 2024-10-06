@@ -73,6 +73,7 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 16px;
+  border-bottom: 1px solid #2E3545;
 }
 
 .header ul {

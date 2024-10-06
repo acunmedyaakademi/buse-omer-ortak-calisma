@@ -71,6 +71,7 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 16px;
+  border-bottom: 1px solid #2E3545;
 }
 
 .header ul {
@@ -175,6 +176,7 @@ h1 {
   background-image: url(../images/redefining-product-features-bg-desktop-mobile.png);
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: contain;
 }
 
 .redefining-product-features-img-tablet {
@@ -255,7 +257,6 @@ h5 {
 }
 
 .questions {
-  margin-inline: 16px;
   border: 1px solid #eaebf0;
   box-shadow: 0px 1px 2px 0px #1018280a;
 }
@@ -278,10 +279,7 @@ h5 {
 }
 
 .question details summary div {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  text-align: right;
+  display: none;
 }
 
 summary div {
@@ -336,9 +334,6 @@ details summary {
   gap: 20px;
 }
 
-.pop-up a {
-  display: none;
-}
 
 .new-button {
   align-content: center;
@@ -359,6 +354,10 @@ details p {
   text-align: left;
   margin-top: 20px;
   color: #5f6d7e;
+}
+
+.frequently-asked-questions {
+  padding: 40px 16px;
 }
 
 .frequently-asked-questions h5 {
@@ -519,7 +518,7 @@ details p {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 }
 
 .register-area a {
@@ -550,10 +549,10 @@ details p {
   display: grid;
   gap: 32px;
   justify-content: center;
-  margin-top: 32px;
+  padding-top: 32px;
 }
 
-.footer {
+.footer-bg {
   padding: 32px 16px;
   background-color: #151b28;
 }
@@ -662,6 +661,17 @@ details p {
     display: none;
   }
 
+  .card-content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 48px;
+  }
+
+  .cards-image {
+    background-size: cover;
+    max-width: 704px;
+    margin-inline: auto;
+  }
   h5 {
     font-size: 32px;
     line-height: 42px;
@@ -674,6 +684,14 @@ details p {
     margin-block: 40px;
     padding-inline: 32px;
   }
+
+  .question details summary div {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    text-align: right;
+  }
+  
 
   /* omer-start */
 
@@ -737,6 +755,10 @@ details p {
     max-width: 336px;
   }
 
+  .sponsors-section {
+    padding: 40px 32px;
+  }
+
   .sponsors-section h3 {
     max-width: 600px;
     margin-inline: auto;
@@ -749,7 +771,7 @@ details p {
   .register-area {
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 
   }
 
@@ -761,7 +783,6 @@ details p {
   .sponsors-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding-bottom: 40px;
   }
 
   .sponsors-list img {
@@ -776,7 +797,7 @@ details p {
     grid-column: 3 / 4;
   }
 
-  .footer {
+  .footer-bg {
     padding: 40px 32px;
   }
 
@@ -917,6 +938,14 @@ details p {
     margin-bottom: 40px;
   }
 
+  .redefining-product-features-img-tablet {
+    display: none;
+  }
+  
+  .redefining-product-features-img-desktop {
+    display: block;
+  }
+
   h5 {
     font-size: 28px;
     font-weight: 600;
@@ -947,6 +976,10 @@ details p {
     max-width: 1280px;
     margin-inline: auto;
     margin-block: 64px;
+  }
+
+  .questions {
+    margin-top: 64px;
   }
 
   .faq-intro {
@@ -1015,10 +1048,12 @@ details p {
   }
 
   .register-area {
-    margin-bottom: 128px;
+    margin-bottom: 64px;
   }
 
-
+  .sponsors-section {
+    padding: 64px 80px;
+  }
 
   .sponsors-list img:nth-child(5) {
     grid-column: auto;
@@ -1028,10 +1063,19 @@ details p {
     grid-column: auto;
   }
 
-  .sponsors-list {
+  .sponsors-section .sponsors-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin-bottom: 64px;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-top: 64px;
+  }
+
+  .sponsors-section h3 {
+    margin-bottom: 32px;
+  }
+
+  .footer {
     max-width: 1280px;
     margin-inline: auto;
   }

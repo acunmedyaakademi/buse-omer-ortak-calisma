@@ -83,6 +83,7 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 16px;
+  border-bottom: 1px solid #2E3545;
 }
 
 .header ul {
@@ -100,7 +101,7 @@ ul {
 .hero {
   position: relative;
   width: 100%;
-  height: 540px;
+  height: 466px;
   background-image: url("../images/base-background.svg");
   background-size: cover;
   background-position: center;
@@ -131,7 +132,9 @@ ul {
 }
 
 .workflow-section {
-  margin-top: 116px;
+  margin-top: 32px;
+  max-width: 400px;
+  margin-inline: auto;
 }
 
 .workflow-section img {
@@ -160,6 +163,31 @@ h1 {
   text-align: center;
   color: #f9f9f9;
   margin-top: 16px;
+}
+
+.contact-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-inline: auto;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.contact-btns a {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: #ffffff;
+  padding-block: 12px;
+  text-align: center;
+  border-radius: 6px;
+  width: 343px;
+}
+
+.get-started-btn {
+  background-color: #437ef7;
 }
 
 .redefining-product-features-img-tablet {
@@ -626,11 +654,16 @@ h1 {
     padding: 20px;
   }
 
+  .hero {
+    height: 490px;
+  }
+
   .workflow-section {
     max-width: 672px;
     margin-top: 48px;
     margin-inline: auto;
     margin-bottom: 48px;
+    margin-top: 48px;
   }
 
   .workflow-text {
@@ -782,6 +815,10 @@ h1 {
     padding-block: 20px;
   }
 
+  .hero {
+    height: 548px;
+  }
+
   .links {
     display: flex;
     justify-content: space-between;
@@ -830,6 +867,10 @@ h1 {
 
   .hamburger-menu {
     display: none;
+  }
+
+  .workflow-section {
+    margin-top: 80px;
   }
 
   .workflow-text {
