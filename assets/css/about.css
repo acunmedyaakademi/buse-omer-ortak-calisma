@@ -559,9 +559,10 @@ h5 {
   margin-bottom: 16px;
 }
 
-.footer-social-media {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.footer-social-media-links {
+  display: flex;
+  gap: 64px;
+  justify-content: center;
 }
 
 .footer-social-media img {

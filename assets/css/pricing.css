@@ -59,6 +59,20 @@ h6 {
   isolation: isolate;
 }
 
+.mobile-only {
+  display: block;
+}
+
+.tablet-only {
+  display: none;
+}
+
+.desktop-only {
+  display: none;
+}
+
+
+
 a {
   text-decoration: none;
 }
@@ -388,6 +402,31 @@ h1 {
   letter-spacing: -0.02em;
   color: #272d37;
   margin-bottom: 16px;
+  text-align: left;
+}
+
+.industry-card a {
+  margin-top: 32px;
+  display: flex;
+  gap: 6px;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  background-color: #437ef7;
+  color: #ffffff;
+  max-width: 133px;
+}
+
+.hero-profiles {
+  padding-inline: 16px;
+}
+
+.hero-profiles img {
+  max-width: 450px;
+  margin-inline:auto;
+  
 }
 
 .customer-name {
@@ -462,9 +501,10 @@ h1 {
   margin-bottom: 16px;
 }
 
-.footer-social-media {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.footer-social-media-links {
+  display: flex;
+  gap: 64px;
+  justify-content: center;
 }
 
 .footer-social-media img {
@@ -472,6 +512,19 @@ h1 {
 }
 
 @media (width >= 768px) {
+
+  .mobile-only {
+    display: block;
+  }
+
+  .tablet-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
   .header {
     padding: 20px;
   }
@@ -549,8 +602,12 @@ h1 {
     text-align: left;
   }
 
+  
+
   .hero-profiles img {
     margin-inline: auto;
+    max-width: 650px;
+
   }
 
   .customers-say-bg h5 {
@@ -594,6 +651,21 @@ h1 {
 }
 
 @media (width >= 1110px) {
+
+  .mobile-only {
+    display: none;
+  }
+
+  .tablet-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+
+
   .header {
     width: 100%;
     max-width: 1280px;
@@ -693,13 +765,26 @@ h1 {
     margin-bottom: 64px;
     margin-top: 0px;
   }
+
+  .lookscout-advantages-cards {
+    margin-inline : auto;
+  }
+
+  .lookscout-advantages-cards .card {
+    max-width: 600px;
+  }
+
+
   .industry-card .intro {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: -0.10000000149011612px;
-    text-align: center;
     margin-bottom: 32px;
+  }
+
+  .industry-card h1 {
+    text-align: left;
   }
 
   .industry-card a {
@@ -745,8 +830,8 @@ h1 {
 
   .industry-card {
     max-width: 516px;
-    padding-block: auto;
     justify-self: center;
+    margin-block:auto;
   }
 
   .hero-profiles img {
