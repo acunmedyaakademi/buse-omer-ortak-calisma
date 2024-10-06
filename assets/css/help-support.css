@@ -421,7 +421,7 @@ h1 {
     max-width: 900px;
     gap: 32px;
   }
-  .integration-card.first-card {
+  .integration-card.third-card {
     display: none;
   }
 
@@ -566,7 +566,7 @@ h1 {
   }
 
   /* omer - start  */
-  .integration-card.first-card {
+  .integration-card.third-card {
     display: block;
   }
 

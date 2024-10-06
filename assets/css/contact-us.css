@@ -195,10 +195,24 @@ h1 {
   color: #272d37;
 }
 
+.form-group {
+  padding-inline : 16px;
+  max-width: 500px;
+  margin-inline: auto;
 
+
+}
 
 .form {
   margin-inline: auto;
+  max-width: 500px;
+  margin-inline: auto;
+
+}
+
+.input-group .text-area {
+  max-width: 500px;
+
 }
 
 .text-label {
@@ -225,7 +239,7 @@ h1 {
   line-height: 22px;
   letter-spacing: -0.10000000149011612px;
   color: #919ba7;
-  padding-left: 16px;
+  /* padding-left: 16px; */
 }
 
 .text-area {
@@ -260,12 +274,14 @@ h1 {
   margin-bottom: 20px;
   display: block;
   margin-bottom: 40px;
-  max-width: 400px;
+  max-width: 600px;
+  margin-inline : auto; 
 }
 
 .checkbox-area {
-  padding-inline: 32px;
+  /* padding-inline: 32px; */
   margin-top: 20px;
+
 }
 
 .footer {
@@ -361,23 +377,26 @@ h1 {
 
   .form {
     width: 100%;
-    margin-inline: 0px;
+    margin-inline: auto;
     margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding-inline: 32px;
+    max-width: 800px;
   }
   .form-group {
     display: flex;
     flex-direction: column;
     background-color: white;
-    max-width: 1280px;
+    max-width: 800px;
     margin-inline: auto;
   }
 
-  .form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    padding-inline: 32px;
+  .input-group {
+    margin-inline:auto;
   }
+
 
   .form .input-group {
     width: 100%;
@@ -388,6 +407,16 @@ h1 {
     line-height: 40px;
   }
 
+  .bottom-input-group {
+    padding-inline: 32px;
+
+  }
+
+  .input-group .text-area {
+    max-width: 800px;
+  }
+
+
   .checkbox-area {
     max-width: 450px;
     /* margin-right: auto; */
@@ -395,6 +424,7 @@ h1 {
 
   .checkbox-area .submit {
     width: 88px;
+    margin-inline:0;
   }
 
   .footer {
