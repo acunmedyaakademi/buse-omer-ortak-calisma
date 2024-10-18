@@ -165,7 +165,29 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 1px solid #eaebf0;
-  padding: 15px 20px;
+  padding: 28px 32px;
+}
+
+.question details summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+summary div {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #5f6d7e;
+}
+
+.pop-up {
+  width: 100%;
+}
+
+.question details summary div {
+  display: none;
 }
 
 .faq p {
@@ -175,9 +197,6 @@ h1 {
   letter-spacing: -0.10000000149011612px;
   text-align: center;
   color: #5f6d7e;
-  padding-inline: 16px;
-  margin-top: 12px;
-  margin-bottom: 32px;
 }
 
 .question p {
@@ -188,6 +207,16 @@ h1 {
   text-align: left;
   color: #272d37;
 }
+
+.question h6 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #272d37;
+}
+
 
 .question p span {
   color: #5f6d7e;
@@ -204,9 +233,13 @@ h1 {
   line-height: 28px;
   text-align: left;
 }
-.pop-up a {
-  display: none;
+
+details summary {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
+
 
 .profile-button {
   align-content: center;
@@ -365,9 +398,10 @@ h1 {
   margin-bottom: 16px;
 }
 
-.footer-social-media {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.footer-social-media-links {
+  display: flex;
+  gap: 64px;
+  justify-content: center;
 }
 
 .footer-social-media img {
@@ -402,6 +436,13 @@ h1 {
 
   .questions {
     margin-inline: 32px;
+  }
+
+  .question details summary div {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    text-align: right;
   }
   /* omer-start   */
 
